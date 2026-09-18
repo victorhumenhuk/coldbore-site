@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Coldbore privacy policy for the local-first collection record app.">
+    <title>Privacy policy | Coldbore</title>
+    <link rel="stylesheet" href="../site.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Coldbore</p>
+      <h1>Privacy policy</h1>
+      <p class="lede">A clear account of what stays on your device, what you may choose to share, and what Coldbore never collects.</p>
+      <p class="meta">Last updated 3 September 2026</p>
+
+      <section class="card callout">
+        <h2>The short version</h2>
+        <p>Coldbore is a local-first collection record. It does not create a Coldbore account or run advertising or analytics. Collection data stays local unless you enable Private Sync or explicitly export or share a copy.</p>
+        <p>Once enabled, Private Sync automatically uploads encrypted snapshots and encrypted attachment blobs to your private iCloud database. Exports, reports, support messages and App Store purchases use only the services you choose.</p>
+      </section>
+
+      <section class="card">
+        <h2>Who is responsible</h2>
+        <p>Thesmios Ltd operates Coldbore. We are registered in England and Wales under company number 17150638. Our registered office is Unit A, 82 James Carter Road, Mildenhall, IP28 7DE, England.</p>
+        <p>For privacy, support or data-protection requests, email <a href="mailto:coldbore@thesmios.com?subject=Coldbore%20data-protection%20request">coldbore@thesmios.com</a>. We only receive information that you choose to include in a message.</p>
+      </section>
+
+      <section class="card">
+        <h2>Your collection records</h2>
+        <p>Coldbore can store collection identity details, optional serial numbers and masked suffixes, values, storage aliases, maintenance, range and ammunition records, photos, documents and reviewed document text.</p>
+        <p>Those records are stored locally in the app’s SwiftData store. The store uses iOS Complete file protection. This is iOS at-rest file protection. Coldbore does not use an app-managed database-encryption key.</p>
+        <p>Private attachment bytes are separately encrypted with AES-256-GCM using a device-only Keychain key. Local archives are password-protected when you choose to create them.</p>
+      </section>
+
+      <section class="card">
+        <h2>Private Sync</h2>
+        <p>If you enable Private Sync, Coldbore creates AES-256-GCM encrypted snapshots and separately encrypted attachment blobs on your device. It uploads ciphertext, not readable SwiftData records, to your private CloudKit database. Sync runs after changes settle, when you return to the app, and during best-effort background refresh. It is not instant or continuously available in the background.</p>
+        <p>CloudKit receives ciphertext and limited transport metadata, including dates, byte counts, content digests, device identifiers, parent snapshot identifiers and attachment digest references. Content digests allow unchanged encrypted attachments to be reused. Storage uses your iCloud quota. Your recovery phrase remains device-local in Keychain. Enter it on a new device before reviewing and restoring a copy.</p>
+        <p>Coldbore can automatically import remote additions when local records have not changed since the shared snapshot. Conflicting changes require your review. Coldbore does not silently replace conflicting local records. You can delete encrypted snapshots and remove device access in Coldbore. Deleting local records does not erase copies already shared or stored elsewhere.</p>
+      </section>
+
+      <section class="card">
+        <h2>Other choices that may expose information</h2>
+        <ul>
+          <li>Exports, reports and local archives are created only when you ask Coldbore to prepare them. A shared copy is no longer controlled by the app.</li>
+          <li>Spotlight is off by default. If enabled, selected metadata can appear in on-device system search.</li>
+          <li>Reminders require your permission and use a generic notification message.</li>
+          <li>Apple processes optional membership purchases through the App Store. Coldbore checks entitlement status but does not receive payment-card details.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Support messages</h2>
+        <p>If you contact us, we use the information in your message to respond, provide support and keep a service record. Please do not send a serial number, document image or other sensitive collection detail unless it is essential to the request.</p>
+        <p>We retain support and feedback messages for up to 24 months after the last interaction, unless a longer period is necessary for a legal claim or obligation.</p>
+        <p>Where UK data-protection law applies, our usual basis for support messages is legitimate interests under Article 6(1)(f) UK GDPR. We may process information where necessary to perform a membership-related contract or meet a legal obligation.</p>
+      </section>
+
+      <section class="card">
+        <h2>Apple and international processing</h2>
+        <p>Apple provides the App Store and, if you enable Private Sync, the iCloud and CloudKit service. Apple handles those services under its own terms and privacy information. Apple infrastructure may process data outside the United Kingdom. Thesmios does not operate a separate Coldbore server or readable copy of your collection records.</p>
+        <p>Your email provider handles any message you choose to send to us under its own terms and privacy information.</p>
+      </section>
+
+      <section class="card">
+        <h2>Your rights</h2>
+        <p>Depending on the law that applies to you and the information involved, you may have rights to access, correct, erase, restrict, object to, or receive a portable copy of personal information held by Thesmios. You can withdraw consent for an optional service at any time.</p>
+        <p>Email <a href="mailto:coldbore@thesmios.com?subject=Coldbore%20data-protection%20request">coldbore@thesmios.com</a> to make a request. If you are in the UK and remain concerned after contacting us, you may complain to the <a href="https://ico.org.uk">Information Commissioner’s Office</a>.</p>
+      </section>
+
+      <section class="card">
+        <h2>Changes</h2>
+        <p>We will update this policy before introducing a new data flow, account, cloud service, diagnostics service, advertising, analytics or third-party SDK. Material changes will appear here and in the app before they take effect.</p>
+      </section>
+
+      <footer>
+        <p><a href="../support/">Coldbore support</a></p>
+        <p>© 2026 Thesmios Ltd. Coldbore is a factual record-keeping app. It does not make legal, safety, insurance, ownership, licensing or compliance determinations.</p>
+      </footer>
+    </main>
+  </body>
+</html>
