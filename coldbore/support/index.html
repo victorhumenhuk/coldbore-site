@@ -1,58 +1,84 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Support and privacy help for the Coldbore local-first collection record app.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Support for Coldbore, the private collection record app: contact, iCloud Backup and restore, membership and privacy.">
     <title>Support | Coldbore</title>
     <link rel="stylesheet" href="../site.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   </head>
   <body>
-    <main>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="../support/">Coldbore</a>
+        <nav class="site-nav" aria-label="Coldbore pages">
+          <a href="../support/" aria-current="page">Support</a>
+          <a href="../privacy/">Privacy</a>
+          <a href="../terms/">Terms</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
       <p class="eyebrow">Coldbore</p>
       <h1>Support</h1>
       <p class="lede">Help for a private collection record that stays with you.</p>
 
       <section class="card callout">
         <h2>Contact Coldbore</h2>
-        <p>Use the support address for app help, feedback, membership questions or a data-protection request.</p>
-        <p><a class="button" href="mailto:coldbore@thesmios.com?subject=Coldbore%20support">Email Coldbore support</a></p>
-        <p>Do not send a serial number, document image or other sensitive collection detail unless it is essential to your request.</p>
+        <p>Email us for help with the app, feedback, a membership question or a privacy request.</p>
+        <p><a class="button" href="mailto:coldbore@thesmios.com?subject=Coldbore%20support">Email coldbore@thesmios.com</a></p>
+        <p class="note">Please do not send a serial number, document image or other sensitive detail unless your request needs it. In the app, go to Settings, then Support &amp; privacy. Each option there opens your email app with a subject line only.</p>
       </section>
 
       <section class="card">
         <h2>Your records</h2>
-        <p>Coldbore stores your collection records locally. It does not create a Coldbore account or provide a readable online copy of your records.</p>
-        <p>You can correct a record in the app, prepare an export or local archive, and erase local records from Settings. Erasing local records also removes Coldbore-managed attachments, app-owned archives, temporary export files, Spotlight entries and the attachment key. It cannot remove copies you previously shared or moved elsewhere.</p>
+        <p>Coldbore stores your collection on your device. There is no Coldbore account and no online copy that we can read.</p>
+        <p>You can correct any record in the app, export your collection as CSV and HTML files or a PDF report, and erase everything from Settings. Erasing removes your records, their photos and documents, temporary export files and Spotlight entries from the device. It turns off iCloud Backup on that device but does not delete your iCloud backups, and it cannot remove copies you already shared.</p>
       </section>
 
       <section class="card">
-        <h2>Private Sync and recovery</h2>
-        <p>Private Sync is optional. Once enabled, it automatically uploads encrypted snapshots and encrypted attachment blobs to your private iCloud database. It does not upload readable SwiftData records. Storage uses your iCloud quota. Keep your recovery phrase somewhere you can access without this device.</p>
-        <p>Keep your recovery phrase safe. Coldbore cannot retrieve a lost recovery phrase. On a new device, enter the phrase, review the encrypted copy and restore it additively. The app does not overwrite existing local records without review.</p>
+        <h2>iCloud Backup and restore</h2>
+        <p>iCloud Backup is free and optional. To turn it on, open Coldbore, go to Settings, then iCloud Backup. Coldbore encrypts a copy of your collection, including photos and documents, on your device and keeps it in your own iCloud. It backs up automatically after changes and in the background, and you can tap Back up now at any time.</p>
+        <p>On a new iPhone or iPad signed in to the same Apple Account, choose Restore from iCloud when you first open Coldbore, or open iCloud Backup later. The key that unlocks your backup normally comes from your iCloud Keychain or your iCloud, so there is nothing to type. If Coldbore cannot find it, enter the recovery key you saved from the iCloud Backup screen, or the recovery phrase you set in Coldbore 1.0.</p>
+        <p>Backups use your iCloud storage. If Coldbore says iCloud storage is full, free up space or choose a larger iCloud+ plan. We cannot see or restore your backups for you, so keep your Apple Account secure.</p>
       </section>
 
       <section class="card">
-        <h2>Membership and purchases</h2>
-        <p>Membership is optional. Your ordinary local records, exports, backup, restore and app lock stay available without it.</p>
-        <p>Apple handles App Store purchases and cancellation controls. In Coldbore, use Restore App Store purchases to refresh an entitlement for the current App Store account.</p>
+        <h2>Coldbore Membership</h2>
+        <p>Membership is optional and adds extra features. Your records, iCloud Backup, exports and ordinary reports, and app lock stay free.</p>
+        <p>Apple handles purchases, renewals, cancellation and refunds. To cancel, open the Settings app on your iPhone or iPad, tap your name, then Subscriptions. If your membership does not appear on a new device, open Coldbore, go to Settings, then Coldbore Membership, and tap Restore Purchases.</p>
       </section>
 
       <section class="card">
         <h2>What Coldbore does not do</h2>
-        <p>Coldbore is a factual record-keeping app. It does not decide whether an item, storage arrangement, transfer or activity is lawful, safe, insured, properly licensed or compliant. A Collection Pack is a read-only record of information you entered. It is not independent proof, a valuation or an ownership certificate.</p>
+        <p>Coldbore is a factual record-keeping app. It does not decide whether an item, storage arrangement, transfer or activity is lawful, safe, insured, properly licensed or compliant. A Collection Pack is a dated summary of information you entered. It is not independent proof, a valuation or an ownership certificate.</p>
       </section>
 
       <section class="card">
         <h2>Privacy and terms</h2>
-        <p>Read the <a href="../privacy/">Coldbore privacy policy</a> for the complete explanation of local storage, optional encrypted recovery, support messages and your data choices.</p>
-        <p>The Apple Standard EULA applies unless Apple presents a different license in the App Store. <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Read the Apple Standard EULA</a>.</p>
+        <p>The <a href="../privacy/">Privacy Policy</a> explains what stays on your device, how iCloud Backup is encrypted and what we receive when you contact us.</p>
+        <p>The <a href="../terms/">Terms of Use</a> explain what Coldbore is for, iCloud Backup and membership. They sit alongside Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed Application End User License Agreement</a>, which governs your license to use the app.</p>
       </section>
-
-      <footer>
-        <p>Thesmios Ltd. Registered in England and Wales. Company number 17150638. Registered office at Unit A, 82 James Carter Road, Mildenhall, IP28 7DE, England.</p>
-        <p><a href="../privacy/">Privacy policy</a></p>
-      </footer>
     </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <nav class="footer-nav" aria-label="Coldbore pages">
+          <a href="../support/" aria-current="page">Support</a>
+          <a href="../privacy/">Privacy Policy</a>
+          <a href="../terms/">Terms of Use</a>
+        </nav>
+        <p>Coldbore is provided by Joao Vitor Humenhuk Achutti, Tel Aviv, Israel. <a href="mailto:coldbore@thesmios.com?subject=Coldbore%20support">coldbore@thesmios.com</a></p>
+        <p>Coldbore is a factual record-keeping app. It does not make legal, safety, insurance, ownership, licensing or compliance determinations.</p>
+        <p>© 2026 Joao Vitor Humenhuk Achutti. Apple, App Store, iCloud, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</p>
+      </div>
+    </footer>
   </body>
 </html>

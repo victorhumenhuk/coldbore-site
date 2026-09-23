@@ -1,83 +1,142 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Coldbore privacy policy for the local-first collection record app.">
-    <title>Privacy policy | Coldbore</title>
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Privacy Policy for Coldbore, the private collection record app. What stays on your device, how iCloud Backup is encrypted, and what we receive.">
+    <title>Privacy Policy | Coldbore</title>
     <link rel="stylesheet" href="../site.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   </head>
   <body>
-    <main>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="../support/">Coldbore</a>
+        <nav class="site-nav" aria-label="Coldbore pages">
+          <a href="../support/">Support</a>
+          <a href="../privacy/" aria-current="page">Privacy</a>
+          <a href="../terms/">Terms</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
       <p class="eyebrow">Coldbore</p>
-      <h1>Privacy policy</h1>
-      <p class="lede">A clear account of what stays on your device, what you may choose to share, and what Coldbore never collects.</p>
-      <p class="meta">Last updated 3 September 2026</p>
+      <h1>Privacy Policy</h1>
+      <p class="lede">What stays on your device, what you can choose to share, and the little we ever receive.</p>
+      <p class="meta">Last updated September 23, 2026</p>
 
       <section class="card callout">
         <h2>The short version</h2>
-        <p>Coldbore is a local-first collection record. It does not create a Coldbore account or run advertising or analytics. Collection data stays local unless you enable Private Sync or explicitly export or share a copy.</p>
-        <p>Once enabled, Private Sync automatically uploads encrypted snapshots and encrypted attachment blobs to your private iCloud database. Exports, reports, support messages and App Store purchases use only the services you choose.</p>
+        <p>Coldbore keeps your collection on your device. There is no Coldbore account, no analytics and no advertising, and we do not sell or share your information.</p>
+        <p>If you turn on iCloud Backup, your collection is encrypted on your device before it is stored in your own iCloud, where we cannot read it. We only receive what you choose to send us by email.</p>
       </section>
 
-      <section class="card">
+      <nav class="card toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#responsible">Who is responsible</a></li>
+          <li><a href="#records">Your collection records</a></li>
+          <li><a href="#icloud-backup">iCloud Backup</a></li>
+          <li><a href="#choices">Choices that share information</a></li>
+          <li><a href="#membership">Membership and the App Store</a></li>
+          <li><a href="#support">Support messages</a></li>
+          <li><a href="#rights">Your rights</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#website">This website</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+        </ol>
+      </nav>
+
+      <section class="card" id="responsible">
         <h2>Who is responsible</h2>
-        <p>Thesmios Ltd operates Coldbore. We are registered in England and Wales under company number 17150638. Our registered office is Unit A, 82 James Carter Road, Mildenhall, IP28 7DE, England.</p>
-        <p>For privacy, support or data-protection requests, email <a href="mailto:coldbore@thesmios.com?subject=Coldbore%20data-protection%20request">coldbore@thesmios.com</a>. We only receive information that you choose to include in a message.</p>
+        <p>Coldbore is provided by Joao Vitor Humenhuk Achutti, an individual developer based in Tel Aviv, Israel (“we” or “us”). We are the data controller for the personal information described in this policy that we receive, which is normally limited to messages you send us.</p>
+        <dl class="details">
+          <div><dt>Provider</dt><dd>Joao Vitor Humenhuk Achutti</dd></div>
+          <div><dt>Location</dt><dd>Tel Aviv, Israel</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:coldbore@thesmios.com?subject=Coldbore%20data-protection%20request">coldbore@thesmios.com</a></dd></div>
+        </dl>
+        <p>This policy covers the Coldbore app for iPhone, iPad and Apple Watch, and this website.</p>
       </section>
 
-      <section class="card">
+      <section class="card" id="records">
         <h2>Your collection records</h2>
-        <p>Coldbore can store collection identity details, optional serial numbers and masked suffixes, values, storage aliases, maintenance, range and ammunition records, photos, documents and reviewed document text.</p>
-        <p>Those records are stored locally in the app’s SwiftData store. The store uses iOS Complete file protection. This is iOS at-rest file protection. Coldbore does not use an app-managed database-encryption key.</p>
-        <p>Private attachment bytes are separately encrypted with AES-256-GCM using a device-only Keychain key. Local archives are password-protected when you choose to create them.</p>
+        <p>Coldbore can hold details about your firearms, including make, model, caliber, optional serial numbers, values, storage notes, maintenance, range sessions, ammunition, photos, documents and text recognized from documents. These records are stored in the app on your device. We do not receive them.</p>
+        <p>The record database uses iOS Complete file protection, which keeps it encrypted on disk while your device is locked. This is iOS file protection. Coldbore does not add a separate app-managed database encryption key. Photos and documents are also encrypted with AES-256-GCM using a key kept in the device’s Keychain. Full serial numbers are shown only after Face ID, Touch ID or your device passcode.</p>
+        <p>Document scanning and text recognition run on your device. When you add photos from your library, Coldbore receives only the photos you choose. Face ID, Touch ID and passcode checks are handled by iOS, and Coldbore never receives biometric data.</p>
       </section>
 
-      <section class="card">
-        <h2>Private Sync</h2>
-        <p>If you enable Private Sync, Coldbore creates AES-256-GCM encrypted snapshots and separately encrypted attachment blobs on your device. It uploads ciphertext, not readable SwiftData records, to your private CloudKit database. Sync runs after changes settle, when you return to the app, and during best-effort background refresh. It is not instant or continuously available in the background.</p>
-        <p>CloudKit receives ciphertext and limited transport metadata, including dates, byte counts, content digests, device identifiers, parent snapshot identifiers and attachment digest references. Content digests allow unchanged encrypted attachments to be reused. Storage uses your iCloud quota. Your recovery phrase remains device-local in Keychain. Enter it on a new device before reviewing and restoring a copy.</p>
-        <p>Coldbore can automatically import remote additions when local records have not changed since the shared snapshot. Conflicting changes require your review. Coldbore does not silently replace conflicting local records. You can delete encrypted snapshots and remove device access in Coldbore. Deleting local records does not erase copies already shared or stored elsewhere.</p>
+      <section class="card" id="icloud-backup">
+        <h2>iCloud Backup</h2>
+        <p>iCloud Backup is optional and stays off until you turn it on.</p>
+        <p>When it is on, Coldbore encrypts a copy of your whole collection, including photos and documents, on your device with AES-256-GCM before anything is uploaded. The encrypted copy is stored in your own private iCloud database and uses your iCloud storage. Coldbore backs up after changes while the app is open, from time to time in the background, and whenever you tap Back up now.</p>
+        <p>For each device that backs up, Coldbore keeps that device’s latest backup plus up to 7 daily and 4 weekly backups, always keeps its newest backup that has firearms in it, and removes its older backups automatically. Encrypted photos and documents that no remaining backup uses are removed during a later backup, once they are at least a day old. Backups from a device that no longer backs up, for example after you erase your records, reinstall Coldbore or replace a device, stay in your iCloud until you delete them in iCloud Backup.</p>
+        <p>The key that encrypts your backups is created on one of your devices. Coldbore keeps it in the device’s Keychain and places copies in your iCloud Keychain and in an end-to-end encrypted field in your private iCloud database, so your other devices can restore without you typing anything. The iCloud Backup screen tells you if Coldbore cannot confirm the copy in your iCloud. You can also choose to view a recovery key and keep it somewhere safe offline. Older keys a device used stay only in that device’s Keychain, so it can still open the backups they made. If you set a recovery phrase in Coldbore 1.0, it is kept only in the Keychain of the device where you set it or enter it, is never copied to iCloud, and is used only to open backups made by Coldbore 1.0. New backups use the new key. We never receive any key, and neither we nor Apple can read the contents of your backups. Anyone who can sign in to your Apple Account and unlock your iCloud Keychain could restore them, so keep your Apple Account secure.</p>
+        <p>To list and manage your backups, Coldbore stores a few details next to the encrypted data that are not end-to-end encrypted: the date and time of each backup, its size and the number of parts it is stored in, a checksum of the encrypted backup, random identifiers for the device that made it and for the backup before it, the size of each photo and document, and random-looking names for each backup, photo and document. iCloud itself also notes when each of these items, and the record holding your encrypted backup key, was created and last changed. Coldbore works out photo and document names from their contents with a key only you hold, so no one without that key can tell which file a name belongs to. The record counts and the type of device shown in the iCloud Backup screen are end-to-end encrypted. None of these details include the contents of your records, photos or documents. Backups made by Coldbore 1.0 name photos and documents by a plain SHA-256 fingerprint of each file until those backups are removed.</p>
+        <p>You can turn iCloud Backup off, or delete your iCloud backups, at any time in Coldbore’s iCloud Backup screen. Erasing your records in Coldbore turns iCloud Backup off on that device but does not delete your backups. We do not operate a server and have no access to your iCloud.</p>
       </section>
 
-      <section class="card">
-        <h2>Other choices that may expose information</h2>
+      <section class="card" id="choices">
+        <h2>Choices that share information</h2>
         <ul>
-          <li>Exports, reports and local archives are created only when you ask Coldbore to prepare them. A shared copy is no longer controlled by the app.</li>
-          <li>Spotlight is off by default. If enabled, selected metadata can appear in on-device system search.</li>
-          <li>Reminders require your permission and use a generic notification message.</li>
-          <li>Apple processes optional membership purchases through the App Store. Coldbore checks entitlement status but does not receive payment-card details.</li>
+          <li>Exports and reports, including CSV and HTML exports, PDF reports and the Collection Pack, are created only when you ask for them. A copy you share or move outside Coldbore is no longer controlled by the app.</li>
+          <li>Spotlight is off by default. If you turn it on, selected record details can appear in search on your device so Coldbore can open the matching record.</li>
+          <li>Reminders need your permission and use generic notification text.</li>
+          <li>The Home Screen widget, the Apple Watch app and the Shortcuts action only open Coldbore to start a range session. They do not store or show collection records.</li>
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card" id="membership">
+        <h2>Membership and the App Store</h2>
+        <p>Apple processes Coldbore Membership purchases through the App Store. Coldbore checks your membership status on your device and never receives your payment details. Apple gives developers sales and subscription reports, which do not include your name or contact details.</p>
+        <p>If you allow sharing with app developers in your device’s Analytics settings, Apple may share aggregated crash and usage statistics with us. Apple handles the App Store, iCloud and iCloud Keychain under its own terms and privacy policy, and may process data in the United States and other countries.</p>
+      </section>
+
+      <section class="card" id="support">
         <h2>Support messages</h2>
-        <p>If you contact us, we use the information in your message to respond, provide support and keep a service record. Please do not send a serial number, document image or other sensitive collection detail unless it is essential to the request.</p>
-        <p>We retain support and feedback messages for up to 24 months after the last interaction, unless a longer period is necessary for a legal claim or obligation.</p>
-        <p>Where UK data-protection law applies, our usual basis for support messages is legitimate interests under Article 6(1)(f) UK GDPR. We may process information where necessary to perform a membership-related contract or meet a legal obligation.</p>
+        <p>If you email us, we receive your email address, your message and anything you attach. We use it to reply, provide support and keep a record of the conversation. Please do not send serial numbers, document images or other sensitive details unless your request needs them.</p>
+        <p>We keep support and feedback messages for up to 24 months after our last exchange, unless we need them longer for a legal claim or obligation. Where UK or EU GDPR applies, our legal basis is our legitimate interest in answering you and running support. For membership questions, it can also be performing our agreement with you or meeting a legal obligation.</p>
+        <p>Messages pass through your email provider and the email service that hosts the coldbore@thesmios.com mailbox. We read and handle them in Israel, which the European Commission and the United Kingdom recognize as providing an adequate level of data protection.</p>
       </section>
 
-      <section class="card">
-        <h2>Apple and international processing</h2>
-        <p>Apple provides the App Store and, if you enable Private Sync, the iCloud and CloudKit service. Apple handles those services under its own terms and privacy information. Apple infrastructure may process data outside the United Kingdom. Thesmios does not operate a separate Coldbore server or readable copy of your collection records.</p>
-        <p>Your email provider handles any message you choose to send to us under its own terms and privacy information.</p>
-      </section>
-
-      <section class="card">
+      <section class="card" id="rights">
         <h2>Your rights</h2>
-        <p>Depending on the law that applies to you and the information involved, you may have rights to access, correct, erase, restrict, object to, or receive a portable copy of personal information held by Thesmios. You can withdraw consent for an optional service at any time.</p>
-        <p>Email <a href="mailto:coldbore@thesmios.com?subject=Coldbore%20data-protection%20request">coldbore@thesmios.com</a> to make a request. If you are in the UK and remain concerned after contacting us, you may complain to the <a href="https://ico.org.uk">Information Commissioner’s Office</a>.</p>
+        <p>Depending on where you live, you may have the right to access, correct, delete, restrict or object to our use of personal information we hold about you, or to receive a copy of it. We hold very little, usually only messages you have sent us. The records inside Coldbore stay on your device and in your iCloud, and you can view, correct, export or delete them yourself at any time.</p>
+        <p>To make a request, email <a href="mailto:coldbore@thesmios.com?subject=Coldbore%20data-protection%20request">coldbore@thesmios.com</a>. We aim to respond within one month. If you are not satisfied with our answer, you can complain to the data protection authority where you live (for example the <a href="https://ico.org.uk">ICO</a> in the UK).</p>
       </section>
 
-      <section class="card">
-        <h2>Changes</h2>
-        <p>We will update this policy before introducing a new data flow, account, cloud service, diagnostics service, advertising, analytics or third-party SDK. Material changes will appear here and in the app before they take effect.</p>
+      <section class="card" id="children">
+        <h2>Children</h2>
+        <p>Coldbore is not directed to children, and we do not knowingly collect personal information from children.</p>
       </section>
 
-      <footer>
-        <p><a href="../support/">Coldbore support</a></p>
-        <p>© 2026 Thesmios Ltd. Coldbore is a factual record-keeping app. It does not make legal, safety, insurance, ownership, licensing or compliance determinations.</p>
-      </footer>
+      <section class="card" id="website">
+        <h2>This website</h2>
+        <p>This website is hosted on GitHub Pages. It uses no cookies, analytics or scripts. GitHub may process technical information such as your IP address to deliver pages and keep its service secure, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+      </section>
+
+      <section class="card" id="changes">
+        <h2>Changes to this policy</h2>
+        <p>We will update this policy before Coldbore starts using a new data flow or service, such as an account, analytics, advertising or another third-party service. The date at the top shows the current version. Material changes will appear here and in the app before they take effect.</p>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <nav class="footer-nav" aria-label="Coldbore pages">
+          <a href="../support/">Support</a>
+          <a href="../privacy/" aria-current="page">Privacy Policy</a>
+          <a href="../terms/">Terms of Use</a>
+        </nav>
+        <p>Coldbore is provided by Joao Vitor Humenhuk Achutti, Tel Aviv, Israel. <a href="mailto:coldbore@thesmios.com?subject=Coldbore%20support">coldbore@thesmios.com</a></p>
+        <p>Coldbore is a factual record-keeping app. It does not make legal, safety, insurance, ownership, licensing or compliance determinations.</p>
+        <p>© 2026 Joao Vitor Humenhuk Achutti. Apple, App Store, iCloud, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</p>
+      </div>
+    </footer>
   </body>
 </html>
